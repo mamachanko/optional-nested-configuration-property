@@ -1,0 +1,16 @@
+spring:
+  profiles: full
+config:
+  required-property: this-is-required
+  optional-property: this-is-optional
+  more-required-config:
+    property: this-is-required
+  more-optional-config:
+    property: this-is-optional
+---
+spring:
+  profiles: minimal
+config:
+    required-property: this-is-required
+    more-required-config:
+      property: this-is-required
